@@ -22,8 +22,18 @@ public class Casa : MonoBehaviour {
 
     }
 
+    void Update()
+    {
+        if(TicTacToe.main.vencedor != 0)
+        {
+            GetComponent<Button>().interactable = false;
+        }
+    }
+
     public void OnClick()
     {
+        GetComponent<Button>().interactable = false;
+
         TicTacToe.main.pos[indiceDoTabuleiro] = TicTacToe.main.jogador;
 
 
@@ -36,7 +46,7 @@ public class Casa : MonoBehaviour {
             GetComponentInChildren<Text>().text = "O";
             TicTacToe.main.jogador = 1;
         }
-
+        TicTacToe.main.VerificarVitoria();
         TicTacToe.main.SaveGame();
     }
 }
