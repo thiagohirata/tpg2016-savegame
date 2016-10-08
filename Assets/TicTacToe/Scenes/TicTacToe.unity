@@ -819,6 +819,10 @@ Prefab:
       propertyPath: m_Name
       value: casa (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 11408080, guid: cac86b2c437b19849ac91b5c4c08a6ef, type: 2}
+      propertyPath: indiceDoTabuleiro
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cac86b2c437b19849ac91b5c4c08a6ef, type: 2}
   m_IsPrefabParent: 0
